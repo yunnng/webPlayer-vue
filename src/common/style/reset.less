@@ -1,0 +1,105 @@
+﻿body, dl, dd, h1, h2, h3, h4, h5, h6, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    color: #333;
+    font: normal normal normal 14px/20px 'Microsoft YaHei', Arial, sans-serif;
+}
+
+img {
+    border: 0;
+}
+
+input[type="text"], input[type="password"], textarea, button {
+    vertical-align: middle;
+    -webkit-appearance: none;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+table {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    td {
+        padding: 0;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.clearFix {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.pullLeft {
+    float: left;
+}
+
+.pullRight {
+    float: right;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.clearfix {
+    &:after {
+        content: '.';
+        display: block;
+        clear: both;
+        line-height: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+.ellipsisNormal {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ellipsis(@line) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+}
