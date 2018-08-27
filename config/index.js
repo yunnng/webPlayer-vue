@@ -3,7 +3,7 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-const distDir = 'webPlayer'
+const distDir = 'webPlayer-vue'
 
 module.exports = {
 	dev: {
